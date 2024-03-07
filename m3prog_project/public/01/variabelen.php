@@ -15,6 +15,8 @@ $temp = 34.3;
     <title>Document</title>
 </head>
 <body>
-    Ik ben <?php echo $naam?>, ik woon in <?php echo $woonplaats?> en ben <?php echo $leeftijd?>. De tempratuur is <?php echo $temp?>, poe poe.
+    Ik ben <?= $naam?>, ik woon in <?= $woonplaats?> en ben <?= $leeftijd?>. De tempratuur is <?= $temp?>, poe poe.
+
+    
 </body>
 </html>
