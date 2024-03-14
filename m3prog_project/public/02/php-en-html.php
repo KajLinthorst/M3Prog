@@ -21,6 +21,6 @@ $githubName = "KajLinthorst"
 <section>
 
     Auteur: <?=$githubName?>
-
+    
 </section>
 </html>
