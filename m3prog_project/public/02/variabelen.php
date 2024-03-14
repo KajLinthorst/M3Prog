@@ -6,10 +6,10 @@ $_naam = "Kaj";
 //$auto/onderdelen = "dit werkt ook niet";
 //$huis&tuin = "womp womp werkt niet";
 $naw = "naw man i work";
-//$22 = "nuhuh werkt";
+//$22 = "nuhuh werkt niet";
 //$$auto = "autowerktniet";
 $kleurVanAuto = "wahoo hij werkt";
-//$software-dev = "software dev werkt";
+//$software-dev = "software dev werkt niet";
 
 
 
