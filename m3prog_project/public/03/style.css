@@ -1,0 +1,20 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 62.5%;
+    background-color: black;
+    display: flex;
+    padding: 2rem;
+}
+
+h1{
+    letter-spacing: 0.4rem;
+    font-style: italic;
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+
+}
