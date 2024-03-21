@@ -23,3 +23,13 @@ function multiply($getal7, $getal8){
     $somMultiply = $getal7 * $getal8;
     return $somMultiply;
 }
+
+function berekenRitKosten($afstand_km, $km_per_liter, $liter_prijs){
+
+    $aantal_liters = $afstand_km / $km_per_liter;
+
+    $kosten_euro = $aantal_liters * $liter_prijs;
+    
+    $realPrice = number_format($kosten_euro);
+    return $realPrice;
+}
