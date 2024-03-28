@@ -37,16 +37,28 @@ function berekenRitKosten($afstand_km, $km_per_liter, $liter_prijs){
 }
 */
 
-function retourBerekenen($afstandInKm, $prijsPerLiter, $aantalKiloBagage, $business){
+
+/**
+ * Deze functie berekent de kosten van de reis.
+ * @param mixed $afstandInKm <Int> Dit is de afstand die gevlogen wordt in kilometers
+ * @param mixed $prijsPerLiter <Int> Dit is de prijs pet liter
+ * @param mixed $aantalKiloBagage <Int> Het aantal kilo bagage
+ * @param mixed $business <Boolean> Dit beslist of de persoon business vliegt, zo ja dan total * 1.5
+ * @return void
+ * 
+ * Hij returnt de waarde doormiddel van echo naar de HTML code
+ */
+function retourBerekenen($afstandInKm, $prijsPerLiter, $aantalKiloBagage, $business)
+{
     $reisKosten = $prijsPerLiter * $afstandInKm / 30;
     $baggageKosten = $aantalKiloBagage * 5;
     $totaleKosten = $reisKosten + $baggageKosten;
 
-    if($business == true){
+    if ($business == true) {
         $businessKosten = $totaleKosten * 1.5;
         echo "Totaal + Business : €";
         echo number_format($businessKosten, 2); // Afronden tot 2 cijfers achter de komma
-    }else{
+    } else {
         echo "Totaal : €";
         echo number_format($totaleKosten, 2); // Afronden tot 2 cijfers achter de komma
     }
