@@ -1,4 +1,6 @@
 <?php
+
+/* 
 function currentDateTime(){
     // Toont de huidige datum en tijd met uren, minuten en seconden
     echo date('d-m-Y H:i:s');
@@ -33,3 +35,21 @@ function berekenRitKosten($afstand_km, $km_per_liter, $liter_prijs){
     $realPrice = number_format($kosten_euro);
     return $realPrice;
 }
+*/
+
+function retourBerekenen($afstandInKm, $prijsPerLiter, $aantalKiloBagage, $business){
+    $reisKosten = $prijsPerLiter * $afstandInKm / 30;
+    $baggageKosten = $aantalKiloBagage * 5;
+    $totaleKosten = $reisKosten + $baggageKosten;
+
+    if($business == true){
+        $businessKosten = $totaleKosten * 1.5;
+        echo "Totaal + Business : €";
+        echo number_format($businessKosten, 2); // Afronden tot 2 cijfers achter de komma
+    }else{
+        echo "Totaal : €";
+        echo number_format($totaleKosten, 2); // Afronden tot 2 cijfers achter de komma
+    }
+}
+
+
